@@ -1,0 +1,47 @@
+{
+  "testedAt": "2026-09-15T22:46:45.319Z",
+  "redResponse": {
+    "endpoint": "paint-red",
+    "fill": "url('//127.0.0.1:4217/paint-red?fresh_nonce=09beb24b4c05201cff8a1e421dfb4fc4#fresh-gradient')",
+    "requestUrls": [
+      "http://127.0.0.1:4217/paint-red",
+      "http://127.0.0.1:4217/paint-red?fresh_nonce=09beb24b4c05201cff8a1e421dfb4fc4"
+    ],
+    "screenshot": "integrity-red.png",
+    "pixels": {
+      "width": 48,
+      "height": 49,
+      "opaquePixels": 2352,
+      "averageRgb": {
+        "red": 255,
+        "green": 5,
+        "blue": 5
+      }
+    }
+  },
+  "greenResponse": {
+    "endpoint": "paint-green",
+    "fill": "url('//127.0.0.1:4217/paint-green?fresh_nonce=4f76fa574388a31a0f279cd53805b7fd#fresh-gradient')",
+    "requestUrls": [
+      "http://127.0.0.1:4217/paint-green",
+      "http://127.0.0.1:4217/paint-green?fresh_nonce=4f76fa574388a31a0f279cd53805b7fd"
+    ],
+    "screenshot": "integrity-green.png",
+    "pixels": {
+      "width": 48,
+      "height": 49,
+      "opaquePixels": 2352,
+      "averageRgb": {
+        "red": 5,
+        "green": 255,
+        "blue": 5
+      }
+    }
+  },
+  "assertions": {
+    "bothExternalResourcesFetched": true,
+    "redResponseControlsPixels": true,
+    "greenResponseControlsPixels": true
+  },
+  "externalPaintControlledPixels": true
+}

@@ -1,0 +1,19 @@
+body {
+  margin: 2rem;
+  color: #202124;
+  font: 16px/1.5 system-ui, sans-serif;
+}
+
+code {
+  overflow-wrap: anywhere;
+}
+
+.status {
+  margin: 0.6rem 0;
+}
+
+mat-icon,
+mat-icon svg {
+  width: 48px !important;
+  height: 48px !important;
+}

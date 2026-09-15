@@ -1,0 +1,59 @@
+{
+  "testedAt": "2026-09-15T22:46:43.345Z",
+  "appUrl": "http://localhost:4216//127.0.0.1:4217/collect",
+  "domEvidence": {
+    "initialUrl": "http://localhost:4216//127.0.0.1:4217/collect",
+    "initialFill": "url('//127.0.0.1:4217/collect#fresh-gradient')",
+    "nonce": "43386642ba36df1f17d39c6e2c7cdd40",
+    "replacedUrl": "http://localhost:4216//127.0.0.1:4217/collect?fresh_nonce=43386642ba36df1f17d39c6e2c7cdd40",
+    "rewrittenFill": "url('//127.0.0.1:4217/collect?fresh_nonce=43386642ba36df1f17d39c6e2c7cdd40#fresh-gradient')"
+  },
+  "visibleText": "Angular Material 22.1.6 dynamic query leak\n\nThis page and the logger bind only to 127.0.0.1.\n\nInitial URL: http://localhost:4216//127.0.0.1:4217/collect\nInitial fill: url('//127.0.0.1:4217/collect#fresh-gradient')\nFresh nonce: 43386642ba36df1f17d39c6e2c7cdd40\nRewritten fill: url('//127.0.0.1:4217/collect?fresh_nonce=43386642ba36df1f17d39c6e2c7cdd40#fresh-gradient')\nPhase: confirmed: MatIcon rewrote the FuncIRI with the fresh nonce",
+  "completionError": "",
+  "browserRequests": [
+    {
+      "url": "http://127.0.0.1:4217/collect",
+      "resourceType": "other"
+    },
+    {
+      "url": "http://127.0.0.1:4217/collect?fresh_nonce=43386642ba36df1f17d39c6e2c7cdd40",
+      "resourceType": "other"
+    }
+  ],
+  "pageMessages": [
+    "console:log:Angular is running in development mode."
+  ],
+  "loggerHits": [
+    {
+      "sequence": 1,
+      "receivedAt": "2026-09-15T22:46:42.623Z",
+      "method": "GET",
+      "requestTarget": "/collect",
+      "referer": "http://localhost:4216/",
+      "secFetchSite": "cross-site",
+      "secFetchMode": "cors",
+      "remoteAddress": "127.0.0.1"
+    },
+    {
+      "sequence": 2,
+      "receivedAt": "2026-09-15T22:46:42.731Z",
+      "method": "GET",
+      "requestTarget": "/collect?fresh_nonce=43386642ba36df1f17d39c6e2c7cdd40",
+      "referer": "http://localhost:4216/",
+      "secFetchSite": "cross-site",
+      "secFetchMode": "cors",
+      "remoteAddress": "127.0.0.1"
+    }
+  ],
+  "assertions": {
+    "exactMaterialVersion": true,
+    "nonceGeneratedAfterInitialUrl": true,
+    "historyAddedNonceToSearch": true,
+    "matIconRewroteFuncIri": true,
+    "loggerSawInitialRequestWithoutNonce": true,
+    "separateLoggerReceivedFreshNonce": true,
+    "loggerRequestIsCrossSite": true,
+    "browserObservedPaintFetchWithNonce": true
+  },
+  "passed": true
+}

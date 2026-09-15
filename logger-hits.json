@@ -1,0 +1,62 @@
+[
+  {
+    "sequence": 1,
+    "receivedAt": "2026-09-15T22:46:42.623Z",
+    "method": "GET",
+    "requestTarget": "/collect",
+    "referer": "http://localhost:4216/",
+    "secFetchSite": "cross-site",
+    "secFetchMode": "cors",
+    "remoteAddress": "127.0.0.1"
+  },
+  {
+    "sequence": 2,
+    "receivedAt": "2026-09-15T22:46:42.731Z",
+    "method": "GET",
+    "requestTarget": "/collect?fresh_nonce=43386642ba36df1f17d39c6e2c7cdd40",
+    "referer": "http://localhost:4216/",
+    "secFetchSite": "cross-site",
+    "secFetchMode": "cors",
+    "remoteAddress": "127.0.0.1"
+  },
+  {
+    "sequence": 3,
+    "receivedAt": "2026-09-15T22:46:44.117Z",
+    "method": "GET",
+    "requestTarget": "/paint-red",
+    "referer": "http://localhost:4216/",
+    "secFetchSite": "cross-site",
+    "secFetchMode": "cors",
+    "remoteAddress": "127.0.0.1"
+  },
+  {
+    "sequence": 4,
+    "receivedAt": "2026-09-15T22:46:44.222Z",
+    "method": "GET",
+    "requestTarget": "/paint-red?fresh_nonce=09beb24b4c05201cff8a1e421dfb4fc4",
+    "referer": "http://localhost:4216/",
+    "secFetchSite": "cross-site",
+    "secFetchMode": "cors",
+    "remoteAddress": "127.0.0.1"
+  },
+  {
+    "sequence": 5,
+    "receivedAt": "2026-09-15T22:46:44.793Z",
+    "method": "GET",
+    "requestTarget": "/paint-green",
+    "referer": "http://localhost:4216/",
+    "secFetchSite": "cross-site",
+    "secFetchMode": "cors",
+    "remoteAddress": "127.0.0.1"
+  },
+  {
+    "sequence": 6,
+    "receivedAt": "2026-09-15T22:46:44.909Z",
+    "method": "GET",
+    "requestTarget": "/paint-green?fresh_nonce=4f76fa574388a31a0f279cd53805b7fd",
+    "referer": "http://localhost:4216/",
+    "secFetchSite": "cross-site",
+    "secFetchMode": "cors",
+    "remoteAddress": "127.0.0.1"
+  }
+]
