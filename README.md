@@ -1,5 +1,8 @@
 # Angular Material 22.1.6 cross-origin FuncIRI PoC
 
+Upstream tracking: [angular/components#33811](https://github.com/angular/components/issues/33811).
+Proposed fix: [angular/components#33812](https://github.com/angular/components/pull/33812).
+
 This local-only reproduction uses the published `@angular/material@22.1.6`. It demonstrates that
 `MatIcon.ngAfterViewChecked()` copies a query value generated *after initial render* into an SVG
 FuncIRI whose `//`-prefixed pathname resolves at a separate origin. The browser then sends that
